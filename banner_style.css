@@ -1,0 +1,61 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.banner-container {
+    overflow: hidden;
+    width: 100%;
+    height: 60vh; /* Adjust the height as necessary */
+    position: relative;
+}
+
+.banner-image {
+    position: absolute;
+    width: 110%; /* Slightly larger than container to create movement space */
+    height: 110%;
+    background-image: url('img/trust_horiztont3.png'); /* Replace with your banner image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease-out;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex; /* Use flexbox to center text */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.banner-text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 4rem; /* Adjust the size */
+    color: #fff; /* Text color */
+    text-align: center; /* Center the text itself */
+    transform: translateX(-70px); /* Posunie text doľava, upravte hodnotu podľa potreby */
+    font-weight: 400; /* Nastavte tenší font, hodnoty: 100, 200, 300 pre tenší vzhľad */
+    letter-spacing: 6px; /* Nastavte medzery medzi písmenami */
+}
+
+.gallery-box {
+    position: relative;
+}
+
+.gallery-box a {
+    position: relative;
+    z-index: 2; /* Vysoký index, aby ste zabezpečili, že odkaz je klikateľný */
+    text-decoration: none; /* Odstráňte podčiarknutie odkazu */
+}
